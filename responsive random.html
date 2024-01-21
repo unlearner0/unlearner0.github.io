@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Random Refresher</title>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your website description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Your App Title">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="imagetoolbar" content="no">
+<meta name="msthemecompatible" content="no">
+<meta name="cleartype" content="on">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="description" content="random information on internet">
+
+
+
+ 
+  
+ 
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://source.unsplash.com/random">
+
+  <!-- iOS Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Your App Title">
+
+  <!-- Windows Meta Tags -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+  <!-- Android Meta Tags -->
+  <meta name="theme-color" content="#ffffff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Your App Title">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@yourtwitterhandle">
+  <meta name="twitter:title" content="Your Title">
+  <meta name="twitter:description" content="Your Twitter Description">
+  <meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg">
+
+  <!-- Open Graph Meta Tags (Facebook) -->
+  <meta property="og:title" content="Your Title">
+  <meta property="og:description" content="Your Open Graph Description">
+  <meta property="og:image" content="https://yourwebsite.com/og-image.jpg">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+
+  <title>Your Website Title</title>
+
+  <!-- Additional Stylesheets and Scripts -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Random Font', Arial, sans-serif;
+      overflow: hidden;
+      background: url('https://source.unsplash.com/random') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    #randomNavbar {
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      z-index: 1;
+    }
+
+    #randomRefresh {
+      font-size: 24px;
+      display: inline-block;
+      animation: moveRandom 5s infinite;
+    }
+
+    @keyframes moveRandom {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(5px, 5px); }
+      50% { transform: translate(-5px, 5px); }
+      75% { transform: translate(-5px, -5px); }
+      100% { transform: translate(5px, -5px); }
+    }
+
+    #randomContent {
+      font-size: 24px; /* Increased font size for better readability */
+      text-align: center;
+      margin: 20px; /* Adjusted margin for better visibility */
+    }
+
+    button {
+      border: 2px solid #000;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 5px;
+      box-shadow: 0 0 5px #000;
+      background-color: #fff;
+      color: #000;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body background="https://source.unsplash.com/random">
+  <div id="randomNavbar">
+    <span id="randomRefresh">Random Refresher</span>
+    <button onclick="redirectToRandomWebsite(videoWebsites)">Video</button>
+    <button onclick="redirectToRandomWebsite(musicWebsites)">Music</button>
+    <button onclick="redirectToRandomWebsite(pageWebsites)">Page</button>
+  </div>
+  <div id="randomContent"></div>
+
+  <script>
+   const videoWebsites = [
+  'https://www.youtube.com/',
+  'https://www.youtube.com/@NASA',
+  'https://www.youtube.com/@NASAJPL',
+  'https://www.youtube.com/watch?v=wS_qbDztgVY',
+  'https://www.youtube.com/watch?v=iuk77TjvfmE',
+  'https://www.youtube.com/channel/UCvC4D8onUfXzvjTOM-dBfEA',
+  'https://www.youtube.com/watch?v=7A3KXjD9D6Q',
+  'https://www.youtube.com/watch?v=TiEVqZ2Bc_c',
+  'https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA',
+  'https://www.youtube.com/watch?v=OCKQBMlXeGc',
+  'https://www.youtube.com/watch?v=3nM32OmKPXk',
+  'https://www.youtube.com/watch?v=e1quN4oKGWs',
+  'https://www.youtube.com/watch?v=lOKASgtr6kU',
+  'https://www.youtube.com/watch?v=Wdjh81uH6FU&vl=en',
+  'https://www.youtube.com/@joerogan',
+  'https://www.youtube.com/watch?v=RtpyxQQt_G4',
+  'https://www.youtube.com/watch?v=1nY8u14wtB0',
+  'https://www.youtube.com/watch?v=6bZZ2o-D3UQ',
+  'https://www.youtube.com/watch?v=RQWWr7bG0Ho',
+  'https://www.youtube.com/watch?v=YbBXRSPBD2E',
+  'https://www.youtube.com/watch?v=beBabwks36o',
+  'https://www.youtube.com/channel/UCkAGrHCLFmlK3H2kd6isipg',
+  'https://www.youtube.com/watch?v=ipa7yyDeV_I',
+  'https://www.youtube.com/watch?v=gXjBCHcbmZ8',
+  'https://www.youtube.com/'
+];
+
+// Now you can use the videoWebsites array in your code.
+
+
+const musicWebsites = [
+  'https://open.spotify.com/track/567e29TDzLwZwfDuEpGTwo?si=8eb0771f198446ee',
+  'https://open.spotify.com/track/6I3mqTwhRpn34SLVafSH7G?si=a56f2bdf68f94b0c',
+  'https://open.spotify.com/track/6I3mqTwhRpn34SLVafSH7G',
+  'https://open.spotify.com/track/7xapw9Oy21WpfEcib2ErSA?si=ae2c1685f77048af',
+  'https://open.spotify.com/track/6QFCMUUq1T2Vf5sFUXcuQ7?si=49970edd68ae4621',
+  'https://open.spotify.com/track/50kpGaPAhYJ3sGmk6vplg0?si=54b40a70568048d6',
+  'https://open.spotify.com/album/3uPnO1aZBwMgWK1DI5zve9?si=VHAzIcuZRaWcxjCZff-buQ',
+  'https://open.spotify.com/album/6mzpIm84OXCBxw6Tuhp1OA?si=i1WM5Rm-SXmMZmuurp7x_Q',
+  'https://open.spotify.com/album/5dGWwsZ9iB2Xc3UKR0gif2?si=i-Nb3Xk2RfuV0XjlIk7OPQ',
+  'https://open.spotify.com/album/63iWSELt9V1kV6RSMxN7Ii?si=aUEulJadQ6uWwPkvphWbSA',
+  
+  'https://www.apple.com/music',
+  'https://www.youtube.com/watch?v=v6oZuqN85D4',
+  'https://www.youtube.com/watch?v=ccu6JuC21rk',
+  'https://www.youtube.com/watch?v=fPO76Jlnz6c',
+  'https://open.spotify.com/track/1DIXPcTDzTj8ZMHt3PDt8p',
+  'https://www.youtube.com/watch?v=wTK6pIFRaSk',
+  'https://open.spotify.com/track/6Ede2Ta7dVhcV7QYQ3OH6N',
+  'https://www.youtube.com/watch?v=ONlMB2oGWwE',
+  'https://www.youtube.com/watch?v=F3wpq-i150c',
+  'https://open.spotify.com/track/1MqzIgGsHP4cNjPboevsfq'
+];
+
+const pageWebsites = [
+  'https://www.miniclip.com/games/en/',
+  'https://www.pokemon.com/us/pokemon-online-games/',
+  'https://www.arkadium.com/free-online-games/',
+  'https://www.astronomy.com/news',
+  'https://www.nationalgeographic.com/',
+  'https://www.history.com/topics',
+  'https://www.scientificamerican.com/',
+  'https://www.discovery.com/',
+  'https://www.natgeokids.com/us/',
+  'https://kids.nationalgeographic.com/',
+  'https://www.factmonster.com/',
+  'https://www.historyforkids.net/',
+  'https://www.coolmathgames.com/',
+  'https://www.funbrain.com/',
+  'https://www.mentalfloss.com/',
+  'https://www.snapple.com/real-facts',
+  'https://www.todayifoundout.com/',
+  'https://www.funtrivia.com/',
+  'https://www.mentalfloss.com/',
+  'https://www.arkadium.com/',
+  'https://www.factretriever.com/',
+  'https://www.historyextra.com/',
+  'https://www.sciencefocus.com/',
+  'https://www.interestingfacts.org/',
+  'https://www.boredpanda.com/',  // Bored Panda for interesting and funny articles
+  'https://www.reddit.com/',  // Reddit for a variety of topics and discussions
+  'https://www.theuselessweb.com/',  // The Useless Web for random and entertaining websites
+  'https://www.upjoke.com/',  // Upjoke for a collection of jokes
+  'https://www.sporcle.com/',  // Sporcle for quizzes and trivia
+  'https://www.goodreads.com/',  // Goodreads for book recommendations and reviews
+  'https://www.howstuffworks.com/',  // HowStuffWorks for interesting facts and explanations
+  'https://www.thisis.sciencemag.org/',  // ScienceMag for cool science-related content
+  // Add more URLs as needed
+];
+
+
+    const sentences = [
+      'The quick brown fox jumps over the lazy dog.',
+      'A journey of a thousand miles begins with a single step.',
+      'To be or not to be, that is the question.',
+      'The only limit to our realization of tomorrow will be our doubts of today.',
+      'Life is what happens when you\'re busy making other plans.',
+      'In three words I can sum up everything I\'ve learned about life: it goes on.',
+      'The future belongs to those who believe in the beauty of their dreams.',
+      'Happiness is not something ready made. It comes from your own actions.',
+      'Tears come from the heart and not from the brain.',
+'Sometimes, you have to go through the worst to get to the best.',
+'Behind every beautiful thing, there\'s some kind of pain.',
+'Don\'t cry because it\'s over, smile because it happened.',
+'The walls we build around us to keep out the sadness also keep out the joy.',
+'Sadness flies away on the wings of time.',
+'It\'s sad when someone you know becomes someone you knew.',
+'The word "happiness" would lose its meaning if it were not balanced by sadness.',
+'You cannot protect yourself from sadness without protecting yourself from happiness.',
+'Feeling lost, crazy, and desperate belongs to a good life as much as optimism, certainty, and reason.',
+'The greatest happiness you can have is knowing that you do not necessarily require happiness.',
+'Happiness is not something ready made. It comes from your own actions.',
+'The purpose of our lives is to be happy.',
+'Happiness is a warm puppy.',
+'There is only one happiness in this life, to love and be loved.',
+'The greatest happiness you can have is knowing that you do not necessarily require happiness.',
+'Happiness is not something ready made. It comes from your own actions.',
+'The greatest happiness you can have is knowing that you do not necessarily require happiness.',
+'Happiness is not something ready made. It comes from your own actions.',
+'The greatest happiness you can have is knowing that you do not necessarily require happiness.',
+'For every minute you remain angry, you give up sixty seconds of peace of mind.',
+'Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.',
+'Anger is never without a reason, but seldom with a good one.',
+'Speak when you are angry, and you will make the best speech you will ever regret.',
+'Anger is often more hurtful than the injury that caused it.',
+'When anger rises, think of the consequences.',
+'People won\'t have time for you if you are always angry or complaining.',
+'Anger, if not restrained, is frequently more hurtful to us than the injury that provokes it.',
+'Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.',
+'Anger is a wind which blows out the lamp of the mind.',
+'Believe you can and you\'re halfway there.',
+'Don\'t watch the clock; do what it does. Keep going.',
+'Success is not final, failure is not fatal: It is the courage to continue that counts.',
+'Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.',
+'Success usually comes to those who are too busy to be looking for it.',
+'Don\'t be afraid to give up the good to go for the great.',
+'I find that the harder I work, the more luck I seem to have.',
+'The only limit to our realization of tomorrow will be our doubts of today.',
+'Life is what happens when you\'re busy making other plans.',
+'The future belongs to those who believe in the beauty of their dreams.',
+'Death is nature\'s way of telling you to slow down.',
+'Our dead are never dead to us, until we have forgotten them.',
+'Death is not the opposite of life, but a part of it.',
+'To the well-organized mind, death is but the next great adventure.',
+'After all, to the well-organized mind, death is but the next great adventure.',
+'Death is so terribly final, while life is full of possibilities.',
+'It is not death that a man should fear, but he should fear never beginning to live.',
+'The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.',
+'To live in hearts we leave behind is not to die.',
+'The idea is to die young as late as possible.',
+'Life is what happens when you\'re busy making other plans.',
+'In three words I can sum up everything I\'ve learned about life: it goes on.',
+'The future belongs to those who believe in the beauty of their dreams.',
+'Happiness is not something ready made. It comes from your own actions.',
+'Life is either a daring adventure or nothing at all.',
+'Life is really simple, but we insist on making it complicated.',
+'The purpose of our lives is to be happy.',
+'Life is 10% what happens to us and 90% how we react to it.',
+'Life is short, and it\'s up to you to make it sweet.',
+'Life is 10% what happens to us and 90% how we react to it.',
+'AI stands for Artificial Intelligence.',
+'The concept of AI dates back to ancient history, but the term "artificial intelligence" was coined in 1956.',
+'Machine learning is a subset of AI that enables machines to learn from data.',
+'Deep learning is a type of machine learning that involves neural networks with many layers.',
+'ChatGPT, powered by OpenAI, is an example of a language model based on artificial intelligence.',
+'AI is used in various fields such as healthcare, finance, transportation, and entertainment.',
+'Natural Language Processing (NLP) is a branch of AI that focuses on the interaction between computers and humans using natural language.',
+'AI has the potential to revolutionize industries and improve efficiency.',
+'Ethical considerations are important in the development and deployment of AI technologies.',
+'AI has both positive and negative implications, and its responsible use is crucial for societal benefit.',
+'ChatGPT is a language model developed by OpenAI.',
+'It is part of the GPT (Generative Pre-trained Transformer) family of models.',
+'ChatGPT is trained on diverse internet text but may not always provide accurate or up-to-date information.',
+'OpenAI has released various versions of the GPT model, with ChatGPT being one of the latest iterations.',
+'The model is designed to generate human-like text based on the input it receives.',
+'ChatGPT can be used for a variety of natural language processing tasks, including conversation, writing assistance, and more.',
+'OpenAI encourages responsible and ethical use of its models and provides guidelines for users.',
+'The development of language models like ChatGPT represents advancements in the field of artificial intelligence.',
+'Users should be aware of the limitations of the model and verify information when needed.',
+'OpenAI continues to iterate on its models, aiming to improve performance and address user feedback.',
+'Instagram is a social media platform for sharing photos and videos.',
+'It was launched in October 2010 and later acquired by Facebook in 2012.',
+'Instagram allows users to apply various filters to their photos before sharing them on the platform.',
+'The platform has features such as Stories, IGTV, and Reels for sharing short-form videos.',
+'Instagram has become a popular platform for influencers, businesses, and individuals to connect with audiences.',
+'The "Instagram" name comes from a combination of "instant camera" and "telegram."',
+'Instagram has a Explore page to discover new content based on user interests.',
+'Users can engage with content by liking, commenting, and sharing posts.',
+'The platform has evolved over the years with updates and new features to enhance user experience.',
+'Instagram has a significant impact on visual culture and social media trends.',
+'Social media refers to online platforms that enable users to create and share content.',
+'Popular social media platforms include Facebook, Instagram, Twitter, LinkedIn, and more.',
+'Social media plays a crucial role in connecting people, sharing information, and fostering communities.',
+'The rise of social media has transformed communication, marketing, and the way information spreads.',
+'Social media platforms use algorithms to personalize content based on user preferences and interactions.',
+'Issues related to privacy, misinformation, and online behavior are challenges faced by social media platforms.',
+'Social media influencers are individuals who have gained a following and influence on these platforms.',
+'The term "viral" often describes content that spreads rapidly across social media networks.',
+'Social media has become a powerful tool for activism, awareness campaigns, and social movements.',
+
+
+    ];
+
+    function getRandomColor() {
+      return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+    }
+
+    // Function to generate a random font
+    function applyRandomFont() {
+      const fonts = [
+        'Arial, sans-serif',
+        'Times New Roman, serif',
+        'Courier New, monospace',
+        'Georgia, serif',
+        'Verdana, sans-serif',
+        'Arial, sans-serif',
+'Times New Roman, serif',
+'Courier New, monospace',
+'Georgia, serif',
+'Verdana, sans-serif',
+'Comic Sans MS, cursive',
+'Helvetica, sans-serif',
+'Trebuchet MS, sans-serif',
+'Impact, sans-serif',
+'Lucida Sans Unicode, sans-serif',
+'Tahoma, sans-serif',
+'Geneva, sans-serif',
+'Courier, monospace',
+'Lucida Console, monospace',
+'Palatino Linotype, Book Antiqua, Palatino, serif',
+'Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times, serif',
+'Consolas, monospace',
+'Monaco, monospace',
+'Andale Mono, monospace',
+'Copperplate, Copperplate Gothic Light, fantasy',
+'Brush Script MT, cursive',
+'Bookman, Bookman Old Style, Book Antiqua, Palatino, serif',
+'Candara, Calibri, Arial, sans-serif',
+'Rockwell, serif',
+'Curlz MT, cursive',
+'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+'Franklin Gothic Medium, Arial, sans-serif',
+'Cambria, Georgia, serif',
+'Perpetua, Baskerville, serif',
+'Liberation Serif, Times New Roman, Times, serif',
+'Liberation Sans, Arial, sans-serif',
+'Liberation Mono, monospace',
+'Century Gothic, sans-serif',
+'MS Gothic, sans-serif',
+'MS UI Gothic, sans-serif',
+'MS PGothic, sans-serif',
+'Bookshelf Symbol 7, fantasy',
+'Segoe Print, cursive',
+'Century Schoolbook, New Century Schoolbook, serif',
+'Arial Black, sans-serif',
+'Lucida Bright, Georgia, serif',
+'Lucida Fax, serif',
+'Lucida Handwriting, cursive',
+'Lucida Sans, sans-serif',
+'Lucida Sans Typewriter, Lucida Console, monospace',
+'MS Serif, New York, serif',
+'Ebrima, sans-serif',
+'Constantia, serif',
+'Corbel, sans-serif',
+'Cambria Math, serif',
+'Candara, sans-serif',
+'Palatino, serif',
+'Tahoma, sans-serif',
+'Impact, Charcoal, sans-serif',
+'Arial Rounded MT Bold, sans-serif',
+'MS Sans Serif, Geneva, sans-serif',
+'Lucida Grande, sans-serif',
+'Geneva, sans-serif',
+'Franklin Gothic Medium, sans-serif',
+'Bodoni MT, serif',
+'Bauhaus 93, sans-serif',
+'Bell MT, serif',
+'Big Caslon, Book Antiqua, Palatino, serif',
+'Century, Century Gothic, sans-serif',
+'Colonna MT, Book Antiqua, Palatino, serif',
+'Engravers MT, fantasy',
+'Wide Latin, fantasy',
+'Calisto MT, Bookman Old Style, Book Antiqua, Palatino, serif',
+'Arial Narrow, sans-serif',
+'Goudy Old Style, Garamond, Baskerville, serif',
+'High Tower Text, Garamond, Baskerville, serif',
+'Jokerman, fantasy',
+'Kristen ITC, cursive',
+'Segoe Script, cursive',
+'Lucida Blackletter, fantasy',
+'Magneto, fantasy',
+'Modern No. 20, fantasy',
+'Mistral, cursive',
+'Old English Text MT, fantasy',
+'Papyrus, fantasy',
+'Parchment, fantasy',
+'Playbill, fantasy',
+'Ravie, fantasy',
+'Showcard Gothic, fantasy',
+'Snap ITC, fantasy',
+'Viner Hand ITC, fantasy',
+'Vivaldi, fantasy',
+'Vladimir Script, fantasy',
+'Webdings, Wingdings, fantasy',
+'Wide Latin, fantasy',
+
+        // ... (other font options)
+      ];
+
+      const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+      document.getElementById('randomContent').style.fontFamily = randomFont;
+    }
+
+    function redirectToRandomWebsite(websites) {
+      const randomWebsite = websites[Math.floor(Math.random() * websites.length)];
+      window.location.href = randomWebsite;
+    }
+
+    function displayRandomSentence() {
+      const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+      const randomContentElement = document.getElementById('randomContent');
+      randomContentElement.innerText = randomSentence;
+      randomContentElement.style.color = getRandomColor(); // Add random color to the displayed sentence
+      applyRandomFont(); // Apply random font to the displayed sentence
+    }
+
+    const randomNavbarElement = document.getElementById('randomNavbar');
+
+    // Apply random background color to the navbar
+    randomNavbarElement.style.backgroundColor = getRandomColor();
+
+    // Display a random sentence by default
+    displayRandomSentence();
+  </script>
+</body>
+</html>
